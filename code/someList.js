@@ -8,20 +8,17 @@
 
     function populateList(container) {
         for (let i = 0; i < listLength; i++) {
-            var entry = document.createElement("div");
-            entry.className = 'navItem';
-            entry.tabIndex = i * 10;
-            entry.setAttribute('data-function', 'changeColor');
-
-            var headline = document.createElement("h3");
-            headline.innerText = 'Headline ' + i;
-            entry.appendChild(headline);
-
-            var content = document.createElement("span");
-            content.innerText = 'tabIndex: ' + entry.tabIndex;
-            entry.appendChild(content);
-
-            container.appendChild(entry);
+            if (i=1) {
+                var entry = document.createElement("div");
+                entry.className = 'navItem';
+                entry.tabIndex = i * 10;
+                entry.setAttribute('data-function', 'changeColor');
+    
+                var headline = document.createElement("h3");
+                headline.innerText = 'test';
+                entry.appendChild(headline);
+                container.appendChild(entry);
+            }
         }
     }
 
