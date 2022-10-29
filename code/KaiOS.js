@@ -54,6 +54,7 @@
 				app.keyCallback.enter();
 				break;
 			case 'ContextMenu':
+			case '*':
 				app.keyCallback.menu();
 				break;
 			case 'Backspace':
