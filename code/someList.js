@@ -1,5 +1,5 @@
 (function (app) {
-    const listLength = 2; /* list items */
+    const listLength = 10; /* list items */
 
     window.addEventListener("load", function () {
         var listContainer = document.getElementById('generatedList');
@@ -13,18 +13,15 @@
             entry.tabIndex = i * 10;
             entry.setAttribute('data-function', 'changeColor');
 
-            if (i=1) {
-                var headline = document.createElement("h3");
-                headline.innerText = 'test';
-            }
-            container.appendChild(entry);
+            var headline = document.createElement("h3");
+            headline.innerText = 'Headline ' + i;
             entry.appendChild(headline);
-            if (i=2) {
-                var headline = document.createElement("h3");
-                headline.innerText = 'another test';
-            }
+
+            var content = document.createElement("span");
+            content.innerText = 'tabIndex: ' + entry.tabIndex;
+            entry.appendChild(content);
+
             container.appendChild(entry);
-            entry.appendChild(headline);
         }
     }
 
