@@ -16,13 +16,12 @@
             if (i=1) {
                 var headline = document.createElement("h3");
                 headline.innerText = 'test';
-                entry.appendChild(headline);
             }
             container.appendChild(entry);
+            entry.appendChild(headline);
             if (i=2) {
                 var headline = document.createElement("h3");
                 headline.innerText = 'another test';
-                entry.appendChild(headline);
             }
         }
     }
