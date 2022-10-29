@@ -15,7 +15,7 @@
                 entry.setAttribute('data-function', 'changeColor');
     
                 var headline = document.createElement("h3");
-                headline.innerText = 'test';
+                headline.innerText = 'Version 1.5.0';
                 entry.appendChild(headline);
                 container.appendChild(entry);
             }
