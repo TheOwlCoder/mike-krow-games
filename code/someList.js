@@ -23,6 +23,8 @@
                 var headline = document.createElement("h3");
                 headline.innerText = 'another test';
             }
+            container.appendChild(entry);
+            entry.appendChild(headline);
         }
     }
 
