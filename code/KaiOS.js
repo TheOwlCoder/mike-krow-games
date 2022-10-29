@@ -3,9 +3,6 @@
 	document.addEventListener('keydown', handleKeydown);
 	document.addEventListener('keyup', handleKeyup);
 
-	var keyOverlay = document.getElementById('keyOverlay');
-	var overlayTimeout;
-
 	function handleKeydown(e) {
 		// enable key overlay
 		keyOverlay.style.display = 'block';
